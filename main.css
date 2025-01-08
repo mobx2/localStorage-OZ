@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  transition: background-color 0.5s ease;
+  flex-direction: column;
+}
+.color-box {
+  background-color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+ul li {
+  list-style: none;
+  opacity: 0.7;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.color-box li:nth-child(1) {
+  background-color: #e74c3c; /* Red */
+}
+.color-box li:nth-child(2) {
+  background-color: #2ecc71; /* Green */
+}
+.color-box li:nth-child(3) {
+  background-color: #3498db; /* Blue */
+}
+.color-box li:nth-child(4) {
+  background-color: #34495e;
+}
+.color-box li:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Active class for li */
+li.active {
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+.color-view {
+  width: 400px;
+  height: 250px;
+  background: #e74c3c; /* Default red */
+  position: relative;
+  margin-top: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  animation: fadeInBounce 0.8s ease forwards;
+}
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.color-view.visible {
+  opacity: 1;
+  transform: scale(1);
+}
