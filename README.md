@@ -17,5 +17,4 @@
     <img src="https://skillicons.dev/icons?i=html,css,js" />
   </a>
 </p>
-    <img src="https://skillicons.dev/icons?i=html,css,js" /> 
-
+<img src="/Screenshot_2025-01-08_07-45-29.png" width="DESIRED WIDTH" height="DESIRED HEIGHT">
