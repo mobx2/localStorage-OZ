@@ -18,7 +18,6 @@
   </a>
 </p>
 
- <img src=" <video src="Screenshot_2025-01-08_07-45-29.png"/>
- 
+    <img src="https://skillicons.dev/icons?i=html,css,js" /> 
 </video> 
 
