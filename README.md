@@ -18,8 +18,7 @@
   </a>
 </p>
 
- <video src=" <video src="movie.ogg" controls>
-</video> ">
+ <video src=" <video src="movie.ogg" controls">
  
 </video> 
 
